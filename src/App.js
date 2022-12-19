@@ -5,85 +5,33 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Profile from './components/Profile';
 import NavBar from './components/NavBar';
-
+import Route from './components/Route';
 
 export default function App() {
-  const [profile, setProfile] = useState("");
-  const [languages, setLanguages] = useState("");
-  const [projects, setProjects] = useState("");
-  const [contact, setContact] = useState("");
-  const [blog, setBlog] = useState("");
-
-  useEffect(() => {
-    setProfile("");
-    setLanguages("");
-    setProjects("");
-    setContact(!contact);
-    setBlog("");
-  }, [])
-
-  function renderProfile() {
-    setProfile(!profile);
-    setLanguages("");
-    setContact("");
-    setProjects("");
-    setBlog("");
-  }
-  function renderLanguages() {
-    setProfile("");
-    setLanguages(!languages);
-    setContact("");
-    setProjects("");
-    setBlog("");
-  }
-  function renderProjects() {
-    setProfile("");
-    setLanguages("");
-    setContact("");
-    setProjects(!projects);
-    setBlog("");
-  }
   
-  function renderBlog() {
-    setProfile("");
-    setLanguages("");
-    setContact("");
-    setProjects("");
-    setBlog(!blog);
-  }
-  function renderContact() {
-    setProfile("");
-    setLanguages("");
-    setContact(!contact);
-    setProjects("");
-    setBlog("");
-  }
+
+
   return (
     <div>
+      <div>
         <NavBar />
-    <body>
-        <div className="render-area">
-          {profile && 
-          <div>
-            <Profile />
-          </div>}
-          {languages && 
-          <div>
-            <Languages />
-          </div>}
-          {projects && 
-          <div>
-            <Projects />
-          </div>}
-          {blog && 
-          <div>
-            <Blog />
-          </div>}
-          {contact && 
-          <div>
+      </div>
+      <body>
+        <Route path="/">
+          <Profile />
+        </Route>
+        <Route path="/Languages">
+          <Languages />
+        </Route>
+        <Route path="/Projects">
+          <Projects />
+        </Route>
+        <Route path="/Blog">
+          <Blog />
+        </Route>
+        <Route path="/Contact">
           <Contact />
-          </div>}
-        </div>
+        </Route>
       </body>
     </div>
   )

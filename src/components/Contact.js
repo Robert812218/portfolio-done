@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function Contact() {
   return (
     <section class="bg-white dark:bg-gray-900">
@@ -22,30 +23,9 @@ export default function Contact() {
             <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
         </form>
     </div>
+
   </section>  
   );
 }
 
-function ContactOld() {
-return (
-  <section class="bg-white dark:bg-gray-900">
-  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Get in Touch</h2>
-    <p class="bg"></p>
-    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" >
-      <fieldset id="fs-frm-inputs">
-        <label for="full-name">Full Name</label>
-        <input type="text" name="name" id="full-name" placeholder="First and Last" required="" />
-        <label for="email-address">Email Address</label>
-        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" />
-        <label for="message">Message</label>
-        <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
-      </fieldset>
-      <input type="submit" value="Submit" />
-    </form>
-  </div>
-  </section>
-  )
-}
 
