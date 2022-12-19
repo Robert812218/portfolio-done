@@ -4,6 +4,8 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Profile from './components/Profile';
+import NavBar from './components/NavBar';
+
 
 export default function App() {
   const [profile, setProfile] = useState("");
@@ -58,17 +60,8 @@ export default function App() {
   }
   return (
     <div>
-      <h1>ROBERT KELLY</h1>
-        <nav>
-            <button onClick={renderProfile}>About Me</button>
-            <button onClick={renderLanguages}>Languages</button>
-            <button onClick={renderProjects}>Projects</button> 
-            <button onClick={renderBlog}>Blog</button>
-            <button onClick={renderContact}>Contact</button>
-            <button className="bg-sky-500/100 ...">TEST</button>
-        </nav>
-
-
+        <NavBar />
+    <body>
         <div className="render-area">
           {profile && 
           <div>
@@ -91,6 +84,7 @@ export default function App() {
           <Contact />
           </div>}
         </div>
+      </body>
     </div>
   )
 }
