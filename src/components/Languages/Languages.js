@@ -18,6 +18,7 @@ export default function Languages() {
                     <li>SQL/Postgres</li>
                     <li>Vim</li>
                     <li>Git/Github</li>
+                    <li>Blender</li>
                 </ul>
         </div>
     );

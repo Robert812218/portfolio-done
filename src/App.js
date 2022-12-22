@@ -6,9 +6,8 @@ import NavBar from './components/NavBar';
 import Route from './components/Route';
 import Carousel from './components/Carousel/Carousel';
 import Projects from './components/Projects';
-import Pagination from './components/Pagination/Pagination';
-
-
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 // const CarouselPage = () => {
 //   return (
@@ -22,21 +21,38 @@ import Pagination from './components/Pagination/Pagination';
 //   ) 
 // }
 
+// function Header() {
+//   return (
+//     <header>
+//       {/* Navbar */}
+//       <nav className="navbar navbar-expand-lg shadow-md py-2 bg-white relative flex items-center w-full justify-between">
+//         <div className="px-6 w-full flex flex-wrap items-center justify-between">
+//           <div className="flex items-center">
+//             <button
+//               className="navbar-toggler border-0 py-3 lg:hidden leading-none text-xl bg-transparent text-gray-600 hover:text-gray-700 focus:text-gray-700 transition-shadow duration-150 ease-in-out mr-2"
+//               type="button" data-bs-toggle="collapse">
+
+//             </button>
+//           </div>
+//         </div>
+//       </nav>
+//     </header>
+//   )
+// }
+ 
+
 
 
 export default function App() {
   return (
       <div>
-         {/* <div>
-          <NavBar />
-        </div>  */}
 
-        {/* <div>
-          <img src={require('./images/programmer-unicycle.jpg')} alt="programmer on fiery unicycle" />
-        </div> */}
+
         <div>
-        
+          <Header />
         </div>
+
+        <div>
         <div>
           <Route path="/">
             <Profile />
@@ -47,12 +63,13 @@ export default function App() {
           <Route path="/Blog">
             <Blog />
           </Route>
-          {/* <Route path="/Contact">
+          <Route path="/Contact">
             <Contact />
-          </Route> */}
+          </Route>
         </div> 
+        </div>
         <div>
-            <Contact />
+            <Footer />
         </div>
       </div>
   );
