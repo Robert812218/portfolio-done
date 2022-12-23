@@ -9,7 +9,7 @@ import Projects from './components/Projects';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
- 
+
 
 
 export default function App() {
@@ -32,7 +32,7 @@ export default function App() {
             <Contact />
           </Route>
         </div> 
-        <div className="h-[15vh] justify-self-end b-red">
+        <div className="h-[15vh]">
           <Footer />
         </div>
       </div>

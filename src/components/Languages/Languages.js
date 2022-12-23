@@ -46,27 +46,35 @@ function ImagePlaceholder() {
     )
 }
 
+
 export default function Languages() {
+
+    const data = [
+        { id: 1, language: "Javascript", framework: "React.js" },
+        { id: 2, language: "Elixir", framework: "Phoenix" },
+        { id: 3, language: "ClojureScript", framework: "Reagent" },
+        { id: 4, language: "Flutter", framework: "Dart" },
+        { id: 5, language: "Python", framework: "Django" },
+        { id: 6, language: "Ruby", framework: "Rails" },
+        { id: 7, language: "C#", framework: ".NET" },
+        { id: 8, language: "SQL", framework: "PostgreSQL" },
+        { id: 9, language: "Vim", framework: "N/A" },
+        { id: 10, language: "Git", framework: "Github" },
+        { id: 11, language: "Blender", framework: "N/A" },
+    ]
+
     return (
         <div>
-            <h4>LANGS</h4>
-                <CardPlaceholder />
-                <br />
-                <ImagePlaceholder />
-                <ul>
-                    <li>Javascript/React.js</li>
-                    <li>Rust/WebAssembly</li>
-                    <li>Elixir/Phoenix</li>
-                    <li>ClojureScript/Reagent</li>
-                    <li>Flutter/Dart</li>
-                    <li>Python/Django</li>
-                    <li>Ruby/Rails</li>
-                    <li>C#</li>
-                    <li>SQL/Postgres</li>
-                    <li>Vim</li>
-                    <li>Git/Github</li>
-                    <li>Blender</li>
-                </ul>
+            <h1>LANGS</h1>
+            <div className="langs">
+                {data.map((lang) => (
+                    <div>
+                        <h1>{lang.language}</h1>
+                        <h4>{lang.framework}</h4>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
+
