@@ -8,7 +8,7 @@ import Carousel from './components/Carousel/Carousel';
 import Projects from './components/Projects';
 import Header from './components/Header';
 import Footer from './components/Footer';
-
+import Languages from "./components/Languages/Languages";
 
 export default function App() {
   return (
@@ -19,6 +19,9 @@ export default function App() {
         <div className="h-[70vh] justify-self-stretch w-full">
           <Route path="/">
             <Profile />
+          </Route>
+          <Route path="/Languages">
+            <Languages />
           </Route>
           <Route path="/Projects">
             <Projects />

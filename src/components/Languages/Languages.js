@@ -46,7 +46,6 @@ function ImagePlaceholder() {
     )
 }
 
-
 export default function Languages() {
 
     const data = [
@@ -64,17 +63,53 @@ export default function Languages() {
     ]
 
     return (
-        <div>
+         <div>
             <h1>LANGS</h1>
-            <div>
+            
+            <ul className="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
                 {data.map((lang) => (
-                    <div>
-                        <h1>{lang.language}</h1>
-                        <h4>{lang.framework}</h4>
-                    </div>
+                    <li className="pb-3 sm:pb-4">
+                        <div className="flex flex-row">
+                            {lang.language}, {lang.framework} 
+
+                        </div>
+                    </li>
                 ))}
-            </div>
+            </ul>
         </div>
     );
 }
+
+
+// export default function Languages() {
+
+//     const data = [
+//         { id: 1, language: "Javascript", framework: "React.js" },
+//         { id: 2, language: "Elixir", framework: "Phoenix" },
+//         { id: 3, language: "ClojureScript", framework: "Reagent" },
+//         { id: 4, language: "Flutter", framework: "Dart" },
+//         { id: 5, language: "Python", framework: "Django" },
+//         { id: 6, language: "Ruby", framework: "Rails" },
+//         { id: 7, language: "C#", framework: ".NET" },
+//         { id: 8, language: "SQL", framework: "PostgreSQL" },
+//         { id: 9, language: "Vim", framework: "N/A" },
+//         { id: 10, language: "Git", framework: "Github" },
+//         { id: 11, language: "Blender", framework: "N/A" },
+//     ]
+
+//     return (
+//          <div>
+//             <h1>LANGS</h1>
+            
+//             <div>
+//                 {data.map((lang) => (
+//                     <div>
+//                         <h1>{lang.language}</h1>
+//                         <h4>{lang.framework}</h4>
+//                     </div>
+//                 ))}
+//             </div>
+//         </div>
+//     );
+// }
 

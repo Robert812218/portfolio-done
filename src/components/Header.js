@@ -17,6 +17,9 @@ export default function Header() {
       <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
         Profile
       </a>
+      <a href="/Languages" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+          Languages
+      </a>
       <a href="/Projects" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
         Projects
       </a>
