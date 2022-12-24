@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Profile from './components/Profile';
-// import NavBar from './components/NavBar';
 import Route from './components/Route';
 import Carousel from './components/Carousel/Carousel';
 import Projects from './components/Projects';
@@ -13,10 +12,10 @@ import Languages from "./components/Languages/Languages";
 export default function App() {
   return (
       <div className="flex flex-col h-[100%]">
-        <div className="h-[15vh] justify-items-stretch">
+        <div className="h-[15vh] w-screen justify-items-stretch">
           <Header />
         </div>
-        <div className="h-[70vh] justify-self-stretch w-full">
+        <div className="h-[70vh] flex justify-center content-center">
           <Route path="/">
             <Profile />
           </Route>
