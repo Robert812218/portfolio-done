@@ -4,12 +4,10 @@ import Contact from './components/Contact';
 import Profile from './components/Profile';
 // import NavBar from './components/NavBar';
 import Route from './components/Route';
-// import Carousel from './components/Carousel/Carousel';
+import Carousel from './components/Carousel/Carousel';
 import Projects from './components/Projects';
 import Header from './components/Header';
 import Footer from './components/Footer';
-
-
 
 
 export default function App() {

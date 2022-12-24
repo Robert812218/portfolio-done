@@ -66,7 +66,7 @@ export default function Languages() {
     return (
         <div>
             <h1>LANGS</h1>
-            <div className="langs">
+            <div>
                 {data.map((lang) => (
                     <div>
                         <h1>{lang.language}</h1>
