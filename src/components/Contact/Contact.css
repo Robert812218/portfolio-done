@@ -1,0 +1,11 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+.input-labels {
+    display: flex;
+    flex-direction: column;
+}

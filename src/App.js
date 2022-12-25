@@ -11,11 +11,13 @@ import Languages from "./components/Languages/Languages";
 
 export default function App() {
   return (
-      <div className="flex flex-col h-[100%]">
-        <div className="h-[15vh] w-screen justify-items-stretch">
+      <body className="app-container">
+
+        <div>
           <Header />
         </div>
-        <div className="h-[70vh] flex justify-center content-center">
+
+        <div className="page-container">
           <Route path="/">
             <Profile />
           </Route>
@@ -32,9 +34,11 @@ export default function App() {
             <Contact />
           </Route>
         </div> 
+
         <div>
           <Footer />
         </div>
-      </div>
+
+      </body>
   );
 }

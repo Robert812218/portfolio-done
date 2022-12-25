@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: 95vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.page-container {
+    border: 2px solid gold;
+}

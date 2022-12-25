@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid black;
+    justify-content: space-around;
+    width: 70vw;
+    height: 20vh;
+}
+
+.header-title {
+    border: 1px solid blue;
+    width: 20%;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px dotted red; */
+    width: 50%;
+}
+
+.page-links {
+    display: flex;
+    flex-direction: row;
+    border: red 5px solid;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.socials-links {
+    display: flex;
+    flex-direction: row;
+}
+

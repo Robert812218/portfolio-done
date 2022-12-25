@@ -16,17 +16,17 @@ export default function Projects() {
 
 
 	return (
-		<div className="">
-			<h1 className="">Projects</h1>
+		<div className="projects-container">
+			<h1 className="projects-header">Projects</h1>
 			<section>
 
-				<div className="grid justify-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7  my-10">
+				<div>
 					{data.map((project) => (
 						// <img className="h-56 lg:h-69 w-full object-cover src=" />
 						<div>
 						
-							<div className="p-3">
-								<h3 className="font-semibold text-xl leading-6 text-gray-700 my-2">{project.title}</h3>
+							<div>
+								<h3>{project.title}</h3>
 								<p>{project.description}</p>
 							</div>
 						</div>

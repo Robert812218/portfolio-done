@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Route from '../Route';
 import './Footer.css';
 
 
 export default function Footer() {
   return (
-    <footer>
-      <a href="https://www.linkedin.com/in/-robert-kelly-/">Linkedin</a>
-      <a href="https://github.com/Robert812218">Github</a>
-    </footer>
+    <div className="row primary">
+      
+    </div>
   )
 }
