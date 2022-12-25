@@ -1,12 +1,10 @@
 import React from "react";
-import Languages from './Languages/Languages';
-
-
-
+import Languages from '../Languages/Languages';
+import './Profile.css';
 
 export default function Profile() {
     return (
-        <div className="w-fit flex justify-evenly flex-row border-8 space-between border-indigo-600">
+        <div>
             <div className="flex flex-col w-[50vw] ">
                 <h4>ABOUT</h4>
                 <div className="flex flex-col">

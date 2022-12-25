@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Blog from './components/Blog';
-import Contact from './components/Contact';
-import Profile from './components/Profile';
+import './App.css';
+import Blog from './components/Blog/Blog';
+import Contact from './components/Contact/Contact';
+import Profile from './components/Profile/Profile';
 import Route from './components/Route';
-import Carousel from './components/Carousel/Carousel';
-import Projects from './components/Projects';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Projects from './components/Projects/Projects';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import Languages from "./components/Languages/Languages";
 
 export default function App() {
@@ -32,7 +32,7 @@ export default function App() {
             <Contact />
           </Route>
         </div> 
-        <div className="h-[15vh]">
+        <div>
           <Footer />
         </div>
       </div>
