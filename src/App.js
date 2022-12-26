@@ -9,7 +9,8 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Languages from "./components/Languages/Languages";
 
-export default function App() {
+
+  export default function App() {
   return (
       <body className="app-container">
 
@@ -42,3 +43,5 @@ export default function App() {
       </body>
   );
 }
+
+

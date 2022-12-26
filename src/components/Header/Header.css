@@ -1,37 +1,51 @@
-header {
-    display: flex;
-    flex-direction: row;
+.header-component {
     border: 5px solid black;
-    justify-content: space-around;
-    width: 70vw;
-    height: 20vh;
 }
 
-.header-title {
-    border: 1px solid blue;
-    width: 20%;
 
+.header-component {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    background: transparent;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    /* border: 2px dotted red; */
-    width: 50%;
+.header-wrapper {
+    display: block;
+    width: 70%;
 }
 
-.page-links {
-    display: flex;
-    flex-direction: row;
-    border: red 5px solid;
-    justify-content: space-evenly;
-    width: 80%;
+.header-logo {
+    float: left;
+    font-weight: 700;
+    font-size: 1.875em;
 }
 
-.socials-links {
-    display: flex;
-    flex-direction: row;
+
+.header-menu {
+    float: right;
+    text-align: center;
 }
 
+.header-menu li {
+    display: inline-block;
+    padding: 0.75em 1.875em;
+}
+
+.header-menu li a {
+    padding-bottom: 0.75em;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 0.875em;
+}
+
+.header-menu li a:hover {
+    color: #fce38a;
+    border-bottom: 0.1875em solid;
+}
+
+.header-menu li a span {
+    font-size: 1.2em;
+}
