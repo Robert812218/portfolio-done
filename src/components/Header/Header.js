@@ -14,6 +14,7 @@ export default function Header() {
             <li><a href="/Contact">Contact</a></li>
             <li><a href="https://github.com/Robert812218" className="header-github-link"><span>GITHUB</span></a></li>
             <li><a href="https://linkedin.com/in/-robert-kelly-/" className="header-linkedin-link"><span>LINKEDIN</span></a></li>
+            <li><a href="https://codepen.io/Robert812218">Codepen</a></li>
           </ul>
         </nav>
       </div>

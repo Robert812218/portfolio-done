@@ -35,10 +35,10 @@ import Languages from "./components/Languages/Languages";
             <Contact />
           </Route>
         </div> 
-
+{/* 
         <div>
           <Footer />
-        </div>
+        </div> */}
 
       </body>
   );
