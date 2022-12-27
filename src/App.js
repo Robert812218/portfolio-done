@@ -8,7 +8,7 @@ import Projects from './components/Projects/Projects';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Languages from "./components/Languages/Languages";
-
+import TestComponent from './components/TestComponent/TestComponent';
 
   export default function App() {
   return (
@@ -26,6 +26,7 @@ import Languages from "./components/Languages/Languages";
             <Languages />
           </Route>
           <Route path="/Projects">
+            {/* <TestComponent /> */}
             <Projects />
           </Route>
           <Route path="/Blog">

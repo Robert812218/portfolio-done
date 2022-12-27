@@ -2,13 +2,13 @@
     background-color: gray;
 }
 
-body {
+.app-container {
     display: flex;
     flex-direction: column;
     width: 95vw;
     height: 95vh;
-    align-items: space-between;
-    justify-content: space-between;
+    /* align-items: space-evenly; */
+    /* justify-content: space-between; */
 }
 
 .page-container {

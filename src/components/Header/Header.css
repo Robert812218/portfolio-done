@@ -13,12 +13,12 @@
   .header-container {  
     background-color: var(--dark);
     margin: 0px;
-    height: 20vh;
+    height: 15vh;
   }
   
   .side {
     display: grid;
-    height: 20vh;
+    height: 15vh;
     overflow: hidden;
     place-items: center;
     position: absolute;
