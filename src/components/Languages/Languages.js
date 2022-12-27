@@ -26,8 +26,8 @@ export default function Languages() {
             <div className="languages-container">
                 <p>
                     Lorem ipsum solor and so on
-                    <div className="easy-grid" style="--m: 20rem; --g">
-                        <div className="example-block"></div>
+                    <div>
+                        <div></div>
                     </div>
                 </p>
             </div>

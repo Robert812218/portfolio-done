@@ -1,24 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Header.css';
 
 export default function Header() {
+  function moveHeader() {
+    const left = document.getElementById("left-side");
+
+    const handleMove = e => {
+      left.style.width = `${e.clientX / window.innerWidth * 100}%`;
+    }
+
+    document.onmousemove = e => handleMove(e);
+
+    document.ontouchmove = e => handleMove(e.touches[0]);
+  }
+
+  useEffect(() => {
+    moveHeader()
+  }, [])
+
   return (
-    <header className="header-component">
-      <div className="header-wrapper">
-        <div className="header-logo">LOGO</div>
-        <nav>
-          <ul className="header-menu">
-            <li><a href="/">Profile</a></li>
-            <li><a href="/Projects">Projects</a></li>
-            <li><a href="/Blog">Blog</a></li>
-            <li><a href="/Contact">Contact</a></li>
-            <li><a href="https://github.com/Robert812218" className="header-github-link"><span>GITHUB</span></a></li>
-            <li><a href="https://linkedin.com/in/-robert-kelly-/" className="header-linkedin-link"><span>LINKEDIN</span></a></li>
-            <li><a href="https://codepen.io/Robert812218">Codepen</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div className="header-container">
+
+    <div id="left-side" className="side">
+      <h1 className="title">
+        Robert Kelly
+        {/* <span className="fancy">Developer</span>       */}
+      </h1>
+    </div>
+    <div id="right-side" className="side">
+      <h1 className="title">
+        {/* Robert Kelly   */}
+        <span className="fancy">Developer</span>     
+      </h1>
+    </div>
+
+
+    </div>
   )
 }
-

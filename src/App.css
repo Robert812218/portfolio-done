@@ -1,5 +1,5 @@
 * {
-    background-color: #18181B;
+    background-color: gray;
 }
 
 body {
@@ -7,10 +7,11 @@ body {
     flex-direction: column;
     width: 95vw;
     height: 95vh;
-    align-items: center;
-    justify-content: space-around;
+    align-items: space-between;
+    justify-content: space-between;
 }
 
 .page-container {
     border: 2px solid gold;
 }
+

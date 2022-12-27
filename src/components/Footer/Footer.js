@@ -7,7 +7,6 @@ import Blog from '../Blog/Blog';
 import Contact from '../Contact/Contact';
 import './Footer.css';
 
-
 export default function Footer() {
   return (
     <footer>

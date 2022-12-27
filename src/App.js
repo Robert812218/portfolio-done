@@ -12,7 +12,7 @@ import Languages from "./components/Languages/Languages";
 
   export default function App() {
   return (
-      <body className="app-container">
+      <div className="app-container">
 
         <div>
           <Header />
@@ -35,12 +35,12 @@ import Languages from "./components/Languages/Languages";
             <Contact />
           </Route>
         </div> 
-{/* 
-        <div>
-          <Footer />
-        </div> */}
 
-      </body>
+        {/* <div>
+          <Footer />
+        </div>  */}
+
+      </div>
   );
 }
 

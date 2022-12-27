@@ -1,52 +1,69 @@
-.header-component {
-    border: 5px solid black;
-}
-
-
-.header-component {
-    /* position: absolute; */
-    height: 15vh;
-    top: 0;
-    z-index: 1000;
-    font-family: Montserrat, sans-serif;
-    color: #fff;
-    background: transparent;
-}
-
-.header-wrapper {
-    display: block;
-    width: 70%;
-}
-
-.header-logo {
-    float: left;
-    font-weight: 700;
-    font-size: 1.875em;
-}
-
-
-.header-menu {
-    float: right;
-    text-align: center;
-}
-
-.header-menu li {
-    display: inline-block;
-    padding: 0.75em 1.875em;
-}
-
-.header-menu li a {
-    padding-bottom: 0.75em;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 0.875em;
-}
-
-.header-menu li a:hover {
-    color: #fce38a;
-    border-bottom: 0.1875em solid;
-}
-
-.header-menu li a span {
-    font-size: 1.2em;
-}
+:root {
+    --dark: rgb(20, 20, 20);
+    --yellow: rgb(253, 216, 53);
+    --blue: rgb(98, 0, 234);
+    
+    --c1: rgb(86, 11, 11);
+    --c2: rgb(38, 31, 116);
+    
+    --left-color: var(--c1);
+    --right-color: var(--c2);
+  }
+  
+  .header-container {  
+    background-color: var(--dark);
+    margin: 0px;
+    height: 20vh;
+  }
+  
+  .side {
+    display: grid;
+    height: 20vh;
+    overflow: hidden;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .side .title {
+    font-family: "Rubik", sans-serif;
+    font-size: 2vw;
+    /* margin: 0px 10vw; */
+    width: 80vw;
+  }
+  
+  .side .fancy {
+    font-family: "Lobster", cursive;
+    /* font-size: 1.3em; */
+    /* line-height: 0.8em; */
+  }
+  
+  #left-side {
+    background-color: var(--left-color);
+    width: 60%;
+    z-index: 2;
+  }
+  
+  #left-side .title {  
+    background-color: var(--left-color);
+    color: white;  
+  }
+  
+  #left-side .fancy {
+    color: var(--left-color);
+  }
+  
+  #right-side {
+    background-color: var(--right-color);
+  }
+  
+  #right-side .title {
+    background-color: var(--right-color);
+    color: var(--dark);
+  }
+  
+  #right-side .fancy {
+    background-color: var(--right-color);
+    color: white;
+  }
+  
