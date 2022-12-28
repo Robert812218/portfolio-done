@@ -60,7 +60,7 @@
   
   #right-side .title {
     background-color: var(--right-color);
-    color: var(--dark);
+    color: white;
   }
   
   #right-side .fancy {

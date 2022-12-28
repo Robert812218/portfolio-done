@@ -5,20 +5,40 @@ import "./Contact.css";
 
 export default function Contact() {
     return (
-        <form action="https://formspree.io/f/mpzeaqjb" method="post">
-            <div className="input-labels">
+        <div className="contact-component">
+            {/* .section-header */}
+            <h1 className="contact-header">GET IN TOUCH</h1>
 
-            <label for="name">Name: </label>
-            <input name="Name" id="name" type="name" />
-            <label for="email">Email: </label>
-            <input name="Email" id="email" type="email" />
-            <label for="message">Message: </label>
-            <input name="Message" id="message" type="text" />
-            </div>
-            <div>
+            {/* .contact-wrapper */}
+            <div className="form-wrapper">
+                <div>
 
-            <button type="submit">Submit</button>
+                    <label for="name">Name: </label>
+                    <input name="Name" id="name" palceholder="NAME" type="name" required />
+                    <label for="email">Email: </label>
+                    <input name="Email" id="email" type="email" required />
+                    <label for="message">Message: </label>
+                    <input name="Message" id="message" type="text" required />
+
+                    <button type="submit">Submit</button>
+                </div>
             </div>
+
+            <ul className="contact-list">
+                <li className="list-item">
+                    <i className="fa fa-map-marker fa-2x">
+                        <span className="city-location">Edmonton, AB</span>    
+                    </i>
+                </li>
+            </ul>
+
+            <form action="https://formspree.io/f/mpzeaqjb" method="post">
+ 
         </form>
+
+        </div>
+      
     )
 }
+
+

@@ -1,13 +1,33 @@
-form {
+.contact-component {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    padding-bottom: 100px;
+}
+
+.contact {
+    width: 100vw;
+    height: 100%;
+}
+
+.contact-component {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 60px 'Oswald', sans-serif;
+    color: #fff;
+    
+}
+
+.form-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    height: 20vh;
+    margin: 0 auto;
+    position: relative;
 }
-
-.input-labels {
-    display: flex;
-    flex-direction: column;
-}
-
-

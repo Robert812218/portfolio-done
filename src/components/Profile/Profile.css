@@ -1,7 +1,5 @@
-.image-placeholder {
-    background-color: gray;
-    width: 150px;
-    height: 300px;
+.profile-picture {
+    background-image: url("https://image-cdn.essentiallysports.com/wp-content/uploads/Randy-Savage-3.png");
 }
 
 .profile-container {

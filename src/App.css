@@ -1,8 +1,73 @@
+* {
+    box-sizing: border-box;
+}
 
 .app-container {
-    display: flex;
-    flex-direction: column;
+    /* margin: 0; */
+    font-weight: 500;
+    font-family: 'HelveticaNeue';
     width: 100vw;
     height: 100vh;
-    background-image: url('../public/images/computer-background.png');
+}
+
+section {
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: none;
+    background-color: #373B44;
+    height: 100vh;
+}
+
+section:nth-of-type(2n) {
+    background-color: #000066;
+}
+
+.intro {
+    height: 90vh;
+}
+
+.content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 3em;
+    display: block;
+    color: white;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+a {
+    font-weight: 700;
+    color: #373B44;
+    position: relative;
+
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+a:active {
+    top: 1px;
+}
+
+footer {
+    padding: 1% 5%;
+    text-align: center;
+    background-color: #1d766f;
+    color: white;
+}
+
+footer a {
+    color: blue;
+    font-weight: 500;
+    text-decoration: none;
 }

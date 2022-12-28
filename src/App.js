@@ -10,35 +10,70 @@ import Footer from './components/Footer/Footer';
 import Languages from "./components/Languages/Languages";
 import TestComponent from './components/TestComponent/TestComponent';
 
-  export default function App() {
+
+
+function RouteContainer() {
   return (
-      <div className="app-container">
-        <Header />
-
-
-        <div className="page-container">
-          <Route path="/">
-            <Profile />
-          </Route>
-          <Route path="/Languages">
-            <Languages />
-          </Route>
-          <Route path="/Projects">
-            {/* <TestComponent /> */}
-            <Projects />
-          </Route>
-          <Route path="/Blog">
-            <Blog />
-          </Route>
-          <Route path="/Contact">
-            <Contact />
-          </Route>
-        </div> 
-        <br />
-        <Footer />
-
-      </div>
-  );
+    <section>
+      <Route path="/">
+        <Profile />
+           </Route>
+           <Route path="/Languages">
+             <Languages />
+           </Route>
+           <Route path="/Projects">
+             {/* <TestComponent /> */}
+             <Projects />
+           </Route>
+           <Route path="/Blog">
+             <Blog />
+           </Route>
+           <Route path="/Contact">
+             <Contact />
+           </Route>
+    </section>
+  )
 }
 
+export default function App() {
 
+
+  return (
+    <div className="app-container">
+      <Header />
+      <section className="intro">
+        <div className="content">
+          <Profile />
+        </div>
+      </section>
+
+      <section>
+        <div className="content">
+          <Languages />
+        </div>
+      </section>
+      <section>
+        <div className="content">
+          {/* <h1 className="body-h1">ANOTHER SECTION</h1> */}
+          <Projects />
+        </div>
+      </section>
+
+      {/* <section>
+        <div className="content">
+          <Blog />
+        </div>
+      </section> */}
+
+      <section>
+        <div className="content">
+          <Contact />
+        </div>
+      </section>
+
+      {/* <footer>
+        Add links <a href="https://github.com/Robert812218">GITHUB LOGO</a>
+      </footer> */}
+    </div>
+  )
+}
