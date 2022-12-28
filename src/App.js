@@ -13,10 +13,8 @@ import TestComponent from './components/TestComponent/TestComponent';
   export default function App() {
   return (
       <div className="app-container">
+        <Header />
 
-        <div>
-          <Header />
-        </div>
 
         <div className="page-container">
           <Route path="/">
@@ -36,10 +34,8 @@ import TestComponent from './components/TestComponent/TestComponent';
             <Contact />
           </Route>
         </div> 
-
-        {/* <div>
-          <Footer />
-        </div>  */}
+        <br />
+        <Footer />
 
       </div>
   );

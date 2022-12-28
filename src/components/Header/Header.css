@@ -29,7 +29,8 @@
     font-family: "Rubik", sans-serif;
     font-size: 2vw;
     /* margin: 0px 10vw; */
-    width: 80vw;
+    position: absolute;
+    width: 50vw;
   }
   
   .side .fancy {

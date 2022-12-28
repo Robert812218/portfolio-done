@@ -24,16 +24,14 @@ export default function Header() {
     <div id="left-side" className="side">
       <h1 className="title">
         Robert Kelly
-        {/* <span className="fancy">Developer</span>       */}
       </h1>
     </div>
     <div id="right-side" className="side">
       <h1 className="title">
-        {/* Robert Kelly   */}
-        <span className="fancy">Developer</span>     
+        Developer
+        {/* <span className="fancy">Developer</span>      */}
       </h1>
     </div>
-
 
     </div>
   )

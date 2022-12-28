@@ -1,17 +1,8 @@
-* {
-    background-color: gray;
-}
 
 .app-container {
     display: flex;
     flex-direction: column;
-    width: 95vw;
-    height: 95vh;
-    /* align-items: space-evenly; */
-    /* justify-content: space-between; */
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../public/images/computer-background.png');
 }
-
-.page-container {
-    border: 2px solid gold;
-}
-

@@ -1,49 +1,51 @@
 import React, { useState, useEffect } from 'react';
-import Route from '../Route';
-import Profile from '../Profile/Profile';
-import Languages from '../Languages/Languages';
-import Projects from '../Projects/Projects';
-import Blog from '../Blog/Blog';
-import Contact from '../Contact/Contact';
+// import Route from '../Route';
+// import Profile from '../Profile/Profile';
+// import Languages from '../Languages/Languages';
+// import Projects from '../Projects/Projects';
+// import Blog from '../Blog/Blog';
+// import Contact from '../Contact/Contact';
 import './Footer.css';
 
+
 export default function Footer() {
+
+
   return (
-    <footer>
-      <div className="row-primary">
-        <div className="column-about">
+    <footer className="site-footer">
+      <div className="container">
+        <div className="row">
+            <h6>About</h6>
 
-            <h3>Rob Kelly</h3>
-            
-            <p>
-              Lorem ipsum dolor sit amet consetetur adipisicing elit. Vit voluptatem corporis error non,
-            </p>
 
-            <div className="social">
-                <p>Github</p>
-                <p>Linkedin</p>
-            </div>
-        </div>
-        <div className="footer-page-links">
-        <ul>
-          <li><a href="/">Profile</a></li>
-        </ul>
-        <ul>
-          <li><a href="/Projects">Projects</a></li>
-        </ul>
-        <ul>
-          <li><a href="/Blog">Blog</a></li>
-        </ul>
-        <ul>
-          <li><a href="/Contact">Contact</a></li>
-        </ul>
-        </div>
 
-        <div className="footer-social-links">
-          <a href="https://github.com/Robert812218">GH</a>
-          <a href="https://linkedin.com/in/-robert-kelly-/">LI</a>
+          <div className="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul className="footer-links">
+              <li><a href="/">Profile</a></li>
+              <li><a href="/Projects">Projects</a></li>
+              <li><a href="/Blog">Blog</a></li>
+              <li><a href="/Contact">Get in Touch</a></li>
+            </ul>
+          </div>
+      </div>
+      <hr></hr>
+    </div>
+      <div className="container">
+        <div className="row">
+
+          <div className="">
+            <ul className="social-icons">
+              {/* <li><a className="facebook" href="#"><i className="fa fa-facebook"></i></a></li> */}
+              {/* <li><a className="twitter" href="#"><i className="fa fa-twitter"></i></a></li> */}
+              Linkedin
+              <li><a className="linkedin" href="https://linkedin.com/in/-robert-kelly-/"><i className="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
         </div>
       </div>
-    </footer>
+</footer>
   )
 }
+
+
