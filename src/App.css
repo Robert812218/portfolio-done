@@ -3,11 +3,11 @@
 }
 
 .app-container {
-    /* margin: 0; */
     font-weight: 500;
     font-family: 'HelveticaNeue';
     width: 100vw;
     height: 100vh;
+    background: cover;
 }
 
 section {

@@ -14,6 +14,7 @@
     background-color: var(--dark);
     margin: 0px;
     height: 15vh;
+    background: cover;
   }
   
   .side {
@@ -27,7 +28,7 @@
   
   .side .title {
     font-family: "Rubik", sans-serif;
-    font-size: 2vw;
+    font-size: 3vw;
     /* margin: 0px 10vw; */
     position: absolute;
     width: 50vw;
