@@ -54,7 +54,6 @@ export default function App() {
       </section>
       <section>
         <div className="content">
-          {/* <h1 className="body-h1">ANOTHER SECTION</h1> */}
           <Projects />
         </div>
       </section>

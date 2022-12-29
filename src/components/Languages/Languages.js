@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Languages.css';
+
+
 const data = [
     { id: 1, language: "Javascript", framework: "React.js" },
     { id: 2, language: "Elixir", framework: "Phoenix" },
@@ -15,25 +17,28 @@ const data = [
 ]
 
 
-
+    
 
 export default function Languages() {
+    const langs = data.map((lang) => {
+        return (
+            <div>
+                <h4 className="raised-box">{lang.language}/ {lang.framework}</h4>
+            </div>
+        );
+    })
+
 
 
 
     return (
-         <div>
+         <div className="languages-container">
             <h1>Languages, Frameworks, and Technologies</h1>
-            
-            <div className="languages-container">
-                <p>
-                    Lorem ipsum solor and so on
-                    <div>
-                        <div></div>
-                    </div>
-                </p>
+            {langs}
+            <div className="render-langs">
+                <langs />
             </div>
-
+{/* 
             <ul className="">
                 {data.map((lang) => (
                     <li className="">
@@ -43,7 +48,7 @@ export default function Languages() {
                         </div>
                     </li>
                 ))}
-            </ul>
+             </ul> */}
         </div>
     );
 }
