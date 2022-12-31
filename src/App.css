@@ -1,5 +1,5 @@
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 
@@ -17,7 +17,7 @@
 section {
     width: 100%;
     padding: 0 7%;
-    display: table;
+    /* display: table; */
     margin: 0;
     max-width: none;
     background-color: #373B44;
@@ -25,6 +25,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 5px solid gold;
 }
 
 section:nth-of-type(2n) {
@@ -39,6 +40,9 @@ section:nth-of-type(2n) {
     align-self: center;
     background-position: center;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -46,6 +50,7 @@ h1 {
     display: block;
     color: white;
     font-weight: 300;
+    text-align: center;
 }
 
 p {

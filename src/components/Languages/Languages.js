@@ -8,7 +8,7 @@ export default function Languages() {
         { item: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
         { item: "Javascript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
         { item: "React.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-        { item: "Typescript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { item: "Typescript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
         { item: "Elixir", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original.svg" },
         { item: "Phoenix", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phoenix/phoenix-original.svg" },
         { item: "Rust", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" },
@@ -35,41 +35,46 @@ export default function Languages() {
     ]
 
 
-
+    const len = data.length / 3;
+    const sec1 = data.slice(0, len);
+    const sec2 = data.slice(len, len * 2);
+    const sec3 = data.slice(len * 2);
     
-    
+    function mapData(arr) {
+        return (
+            arr.map((lang) => (
+                    <div className="slider-item">
+                       <div style={{
+                           backgroundImage: `url("${lang.icon}")`,
+                           backgroundPosition: "center",
+                           backgroundSize: "cover",
+                           backgroundRepeat: "no-repeat",
+                           width: "3rem",
+                           height: "3rem",
+                        }}></div>
+                        <h6 className="slider-title">
+                            {lang.item}
+                        </h6>
+                    </div>
+            ))
+        )
+    }
 
     return (
         <div className="languages-container">
-            <h1>Languages, Frameworks and Technologies</h1>
+            <h1 className="languages-header">Languages, Frameworks and Technologies</h1>
             <div className="slider-container">
-                <div className="langs-1">
-
+                <div className="langs-slide-1">
+                    {mapData(sec1)}
                 </div>
-                <div className="langs-2">
-
+                <div className="langs-slide-2">
+                    {mapData(sec2)}
                 </div>
-                {data.map((lang) => (
-                    <div className="slider-item">
-                        {lang.icon ? 
-                        <div>
-                        <div style={{
-                            backgroundImage: `url("${lang.icon}")`,
-                            backgroundPosition: "center",
-                            backgroundSize: "cover",
-                            backgroundRepeat: "no-repeat",
-                            width: "3rem",
-                            height: "3rem",
-                        }}></div>
-                        {lang.item}</div>
-                        : 
-                        
-                        <div>{lang.item}</div>}
-                    </div>
-                ))}
+                <div className="langs-slide-3">
+                    {mapData(sec3)}
+                </div>
             </div>
             
-            {/* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /> */}
            
         </div>
     );

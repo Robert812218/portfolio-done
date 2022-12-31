@@ -28,8 +28,7 @@ export default function Header() {
     </div>
     <div id="right-side" className="side">
       <h1 className="title">
-        Best Developer
-        {/* <span className="fancy">Developer</span>      */}
+        <span className="fancy">Full-Stack Developer</span>     
       </h1>
     </div>
 

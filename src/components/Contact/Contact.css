@@ -1,8 +1,18 @@
 .contact-component {
-    border: 5px solid red;
+}
+
+.contact-form {
+    border: 5px solid green;
     display: flex;
-    align-self: center;
     flex-direction: column;
-    width: 50rem;
-    height: 20rem;
+    justify-content: space-evenly;
+    width: 25rem;
+    height: 15rem;
+}
+#input-message {
+    height: 40%;
+}
+
+#input-submit {
+    
 }

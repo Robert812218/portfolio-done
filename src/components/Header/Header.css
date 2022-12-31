@@ -62,6 +62,7 @@
   #right-side .title {
     background-color: var(--right-color);
     color: white;
+    text-align: end;
   }
   
   #right-side .fancy {

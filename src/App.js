@@ -48,9 +48,9 @@ export default function App() {
       </section>
 
       <section>
-        <div className="content">
+        {/* <div className="content"> */}
           <Languages />
-        </div>
+        {/* </div> */}
       </section>
       <section>
         <div className="content">

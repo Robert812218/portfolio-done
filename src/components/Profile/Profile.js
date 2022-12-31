@@ -10,8 +10,10 @@ export default function Profile() {
                     <button>projects &darr;</button>
                     <button>contact &darr;</button>
                 </div>
-            
+                <div>
                 <p>Enthusiastic and determined full-stack developer, with a passion for constructing the physical and virtual world. I enjoy building things, solving problems, and challenging projects.</p>
+                </div> 
+    
                 <div 
                     className="profile-picture"
                     style={{
