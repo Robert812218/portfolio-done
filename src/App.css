@@ -25,11 +25,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid gold;
 }
 
 section:nth-of-type(2n) {
-    background-color: #ac651e;
+    background-color: rgb(37, 36, 36);
 }
 
 
@@ -60,8 +59,6 @@ p {
 a {
     font-weight: 700;
     color: #373B44;
-    /* position: relative; */
-
 }
 
 
@@ -74,7 +71,6 @@ footer {
 }
 
 footer a {
-    /* color: blue; */
     font-weight: 500;
     text-decoration: none;
 }

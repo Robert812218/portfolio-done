@@ -69,10 +69,12 @@ export default function App() {
           <Contact />
         </div>
       </section>
-
-      {/* <footer>
-        Add links <a href="https://github.com/Robert812218">GITHUB LOGO</a>
-      </footer> */}
+ 
+      <footer>
+        <a href="https://github.com/Robert812218">Github</a>
+        <a href="https://linkedin.com/li/-robert-kelly-/">Linkedin</a>
+        <a href="https://codepen.io/Robert812218">Codepen</a>
+      </footer>
     </div>
   )
 }
