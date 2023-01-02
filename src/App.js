@@ -12,32 +12,7 @@ import TestComponent from './components/TestComponent/TestComponent';
 
 
 
-function RouteContainer() {
-  return (
-    <section>
-      <Route path="/">
-        <Profile />
-           </Route>
-           <Route path="/Languages">
-             <Languages />
-           </Route>
-           <Route path="/Projects">
-             {/* <TestComponent /> */}
-             <Projects />
-           </Route>
-           <Route path="/Blog">
-             <Blog />
-           </Route>
-           <Route path="/Contact">
-             <Contact />
-           </Route>
-    </section>
-  )
-}
-
-export default function App() {
-
-
+function PageContainer() {
   return (
     <div className="app-container">
       <Header />
@@ -48,9 +23,7 @@ export default function App() {
       </section>
 
       <section>
-        {/* <div className="content"> */}
           <Languages />
-        {/* </div> */}
       </section>
       <section>
         <div className="content">
@@ -58,11 +31,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* <section>
-        <div className="content">
-          <Blog />
-        </div>
-      </section> */}
 
       <section>
         <div className="content">
@@ -75,6 +43,36 @@ export default function App() {
         <a href="https://linkedin.com/li/-robert-kelly-/">Linkedin</a>
         <a href="https://codepen.io/Robert812218">Codepen</a>
       </footer>
+    </div>
+  )
+}
+
+export default function App() {
+  const [page, setPage] = useState("");
+
+  useEffect(() => {
+  })
+
+  function renderPage() {
+    setPage(!page);
+    
+  }
+
+  let removeBanner = {
+
+  }
+
+  return (
+    <div>
+      {/* <div className="disclaimer-hero">
+        <button onClick={renderPage}>GO TO PAGE</button>
+      </div> */}
+      
+      {/* {page && 
+        <div>
+          <PageContainer />
+        </div>} */}
+        <PageContainer />
     </div>
   )
 }

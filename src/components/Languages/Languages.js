@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Languages.css';
 
 export default function Languages() {
+
+
+    // icons from https://devicon.dev
     const data = [
 
         { item: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
@@ -31,19 +34,19 @@ export default function Languages() {
         { item: "SASS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"  },
         { item: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"  },
         { item: "Linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
+        { item: "Android Studio", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" }
         
     ]
 
+    for (let i = 0; i < data.length; i++) {
+        data[i].id = i;
+    }
 
-    const len = data.length / 3;
-    const sec1 = data.slice(0, len);
-    const sec2 = data.slice(len, len * 2);
-    const sec3 = data.slice(len * 2);
-    
-    function mapData(arr) {
+
+    function mapLangs(arr) {
         return (
             arr.map((lang) => (
-                    <div className="slider-item">
+                    <div className="langs-slider-item">
                        <div style={{
                            backgroundImage: `url("${lang.icon}")`,
                            backgroundPosition: "center",
@@ -60,22 +63,38 @@ export default function Languages() {
         )
     }
 
+    let len = data.length / 3;
+    let row1 = data.slice(0, len);
+    let row2 = data.slice(len, len * 2);
+    let row3 = data.slice(len * 2);
+
+
     return (
         <div className="languages-container">
             <h1 className="languages-header">Languages, Frameworks and Technologies</h1>
-            <div className="langs-slider-container">
-                <div className="langs-slide-1">
-                    {mapData(sec1)}
-                </div>
-                <div className="langs-slide-2">
-                    {mapData(sec2)}
-                </div>
-                <div className="langs-slide-3">
-                    {mapData(sec3)}
-                </div>
-            </div>
             
-           
+            <div className="langs-slider-containers">
+                <div className="langs-slider-icons">
+                    <div>
+                        {mapLangs(row1)}
+                    </div>
+                    <div>
+                        {mapLangs(row2)}
+                    </div>
+                    <div>
+                        {mapLangs(row3)}
+                    </div>
+                </div>
+                <div className="langs-slider-buttons">
+                   {data.map((lang) => (
+                        <button>
+                            {lang.id}
+                            {lang.item}
+                        </button>
+                    ))}
+                </div>
+                
+            </div>
         </div>
     );
 }

@@ -5,6 +5,12 @@
 
 }
 
+.disclaimer-hero {
+    width: 100vw;
+    height: 20vh;
+    z-index: 1;
+}
+
 .app-container {
     font-weight: 500;
     font-family: 'HelveticaNeue';

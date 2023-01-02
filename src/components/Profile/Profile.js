@@ -17,7 +17,7 @@ export default function Profile() {
                 <div 
                     className="profile-picture"
                     style={{
-                        backgroundImage: `url("https://image-cdn.essentiallysports.com/wp-content/uploads/Randy-Savage-3.png?width=640")`,
+                        backgroundImage: `url("https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png")`,
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
