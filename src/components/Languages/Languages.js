@@ -63,7 +63,7 @@ export default function Languages() {
     return (
         <div className="languages-container">
             <h1 className="languages-header">Languages, Frameworks and Technologies</h1>
-            <div className="slider-container">
+            <div className="langs-slider-container">
                 <div className="langs-slide-1">
                     {mapData(sec1)}
                 </div>

@@ -1,9 +1,9 @@
 /* Slideshow container */
-.slider-container {
+.projects-slider-container {
   position: relative;
   margin: 50px auto 20px auto;
-  width: 600px;
-  height: 300px;
+  width: 70vw;
+  height: 65vh;
 }
 
 /* Style each slide */
@@ -36,15 +36,33 @@
   border: none;
 }
 
+
 /* Position the "next" button to the right */
 .next {
   right: 0;
+}
+
+.prev {
+  left: 0;
 }
 
 /* On hover, add a semi-transparent black background */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+#project-description {
+  display: none;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.1));
+  color: white;
+  padding: 5%;
+  text-align: center;
+  text-justify: center;
+}
+
+.projects-slider-container:hover #project-description {
+  display: block;
 }
 
 /* Caption text */
@@ -57,12 +75,15 @@
   font-size: 15px;
   font-weight: bold;
   color: #fff;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.1));
 }
 
 /* The dots indicator */
 .dots {
   display: flex;
   justify-content: center;
+  width: 100%;
+  
 }
 
 .dot {
@@ -90,6 +111,21 @@
 @keyframes fade {
   from {
     opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade2 {
+  animation-name: fade2;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade2 {
+  from {
+    opacity: 0.3;
+    padding-top: 25%;
   }
   to {
     opacity: 1;
