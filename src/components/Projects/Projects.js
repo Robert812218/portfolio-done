@@ -29,11 +29,17 @@ export default function Projects() {
   // const bg1 = require("src/images/programmer-unicycle.jpg")
   return (
     <>
+        <div style={{
+          display: "flex",
+          flexDirection: "column",
+        }}>
+            <button><a href="#contact">Contact &darr;</a></button>
+            <button><a href="#socials">Socials &darr;</a></button>
+        </div>
         <div className='projects-slider-container'>
         
         {projects.map((project) => (
           <>
-            {/* <div className="project-description">{project.description}</div> */}
           <div
             style={{
               backgroundImage: `url(${project.img})`,

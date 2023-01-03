@@ -5,10 +5,33 @@
 
 }
 
-.disclaimer-hero {
+#disclaimer-hero {
     width: 100vw;
-    height: 20vh;
-    z-index: 1;
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_960_720.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#disclaimer-hero h1 {
+    color: rgb(34, 33, 33);
+    
+    
+}
+
+#disclaimer-hero h4 {
+    padding: 0% 10% 0% 10%;
+    text-align: center;
+}
+
+#disclaimer-hero button {
+    margin-bottom: 2%;
 }
 
 .app-container {
@@ -72,11 +95,17 @@ a {
 footer {
     padding: 1% 5%;
     text-align: center;
-    background-color: #1d766f;
+    background-color: #6e6c6c;
     color: white;
 }
 
 footer a {
     font-weight: 500;
     text-decoration: none;
+}
+
+
+.footer-icon {
+    width: 5em;
+    height: 5em;
 }

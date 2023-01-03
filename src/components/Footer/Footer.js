@@ -1,10 +1,3 @@
-import React, { useState, useEffect } from 'react';
-// import Route from '../Route';
-// import Profile from '../Profile/Profile';
-// import Languages from '../Languages/Languages';
-// import Projects from '../Projects/Projects';
-// import Blog from '../Blog/Blog';
-// import Contact from '../Contact/Contact';
 import './Footer.css';
 
 
@@ -36,10 +29,9 @@ export default function Footer() {
 
           <div className="">
             <ul className="social-icons">
-              {/* <li><a className="facebook" href="#"><i className="fa fa-facebook"></i></a></li> */}
+              
               {/* <li><a className="twitter" href="#"><i className="fa fa-twitter"></i></a></li> */}
               Linkedin
-              <li><a className="linkedin" href="https://linkedin.com/in/-robert-kelly-/"><i className="fa fa-linkedin"></i></a></li>   
             </ul>
           </div>
         </div>

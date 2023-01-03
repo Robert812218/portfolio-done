@@ -10,6 +10,7 @@
     box-sizing: border-box;
     height: 100%;
     width: 100%;
+    overflow: scroll;
 }
 
 /* .languages-header {
@@ -25,7 +26,6 @@
     background-color: rgba(74, 71, 71, 0.5);
     width: 100%;
     height: 100%;
-    border: 5px solid green;  
 }
 
 
@@ -44,7 +44,8 @@
     justify-content: space-evenly;
     width: 40vw;
     height: 60vh;
-    border: 5px solid red;
+    border: 5px solid gray;
+    overflow: scroll;
 }
 
 .langs-slider-item {
@@ -57,6 +58,29 @@
     color: white;
 }
 
+/* The dots indicator */
+.dots {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.active,
+.dot:hover {
+  background-color: gray;
+}
 
 
 @keyframes rotate {

@@ -34,7 +34,10 @@ export default function Languages() {
         { item: "SASS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"  },
         { item: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"  },
         { item: "Linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
-        { item: "Android Studio", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" }
+        { item: "Android Studio", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" },
+        { item: "Erlang", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/erlang/erlang-original-wordmark.svg" },
+        { item: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" },
+        { item: "Npm", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" },
         
     ]
 
@@ -72,7 +75,16 @@ export default function Languages() {
     return (
         <div className="languages-container">
             <h1 className="languages-header">Languages, Frameworks and Technologies</h1>
-            
+            <div style={{
+                display: "flex",
+                flexDirection: "row",
+            }}>
+                <button><a href="#projects">Projects &darr;</a></button>
+                <button><a href="#contact">Contact &darr;</a></button>
+                <button><a href="#socials">Socials &darr;</a></button>
+            </div>
+
+
             <div className="langs-slider-containers">
                 <div className="langs-slider-icons">
                     <div>
@@ -87,9 +99,9 @@ export default function Languages() {
                 </div>
                 <div className="langs-slider-buttons">
                    {data.map((lang) => (
-                        <button>
-                            {lang.id}
-                            {lang.item}
+                        <button className="dot">
+                            {/* {lang.id} */}
+                            {/* {lang.item} */}
                         </button>
                     ))}
                 </div>
