@@ -28,13 +28,23 @@ export default function Projects() {
 
   // const bg1 = require("src/images/programmer-unicycle.jpg")
   return (
-    <>
+    <div style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+    }}>
+        <div className="projects-header">
+          <h1>Projects</h1>
+            <div>
+            <button><a href="#contact">Contact &darr;</a></button>
+            <button><a href="#socials">Socials &darr;</a></button>
+            </div>
+        </div>
+        <div>
         <div style={{
           display: "flex",
           flexDirection: "column",
         }}>
-            <button><a href="#contact">Contact &darr;</a></button>
-            <button><a href="#socials">Socials &darr;</a></button>
         </div>
         <div className='projects-slider-container'>
         
@@ -88,7 +98,7 @@ export default function Projects() {
     
       </div>
 
-
-    </>
+      </div>
+    </div>
   );
 }

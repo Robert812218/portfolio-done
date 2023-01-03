@@ -6,9 +6,14 @@ import "./Contact.css";
 export default function Contact() {
     return (
         <div className="contact-component">
-            <button><a href="#socials">Socials &darr;</a></button>
-
-            <h1>Get in Touch</h1>
+            <div style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "center",
+            }}>
+                <h1>Get In Touch</h1>
+            </div>
             <form action="https://formspree.io/f/mpzeaqjb" method="post" className="contact-form">
                     <input type="text" id="name-input" placeholder="Name" />
                     <input type="email" id="email-input" placeholder="Email" />

@@ -81,7 +81,7 @@ export default function Languages() {
             }}>
                 <button><a href="#projects">Projects &darr;</a></button>
                 <button><a href="#contact">Contact &darr;</a></button>
-                <button><a href="#socials">Socials &darr;</a></button>
+                <button><a href="#footer">Socials &darr;</a></button>
             </div>
 
 

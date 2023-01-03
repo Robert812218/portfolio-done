@@ -6,6 +6,12 @@
   height: 65vh;
 }
 
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Style each slide */
 .slide {
   display: none;
