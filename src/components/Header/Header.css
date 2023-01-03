@@ -5,9 +5,11 @@
     
     --c1: rgb(86, 11, 11);
     --c2: rgb(38, 31, 116);
+    --c3: rgb(101, 0, 0);
+    --c4: rgb(13, 15, 24);
     
-    --left-color: var(--c1);
-    --right-color: var(--c2);
+    --left-color: var(--c3);
+    --right-color: var(--c4);
   }
   
   .header-container {  
