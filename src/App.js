@@ -39,15 +39,15 @@ function PageContainer() {
       <footer id="footer">
         {/* <button><a href="">&uarr;</a></button> */}
         <a href="https://github.com/Robert812218" className="footer-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" className="footer-icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" className="footer-icon" alt="github icon" />
         </a>
 
         <a href="https://linkedin.com/li/-robert-kelly-/" >
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" className="footer-icon" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" className="footer-icon" alt="linkedin icon" />
 
         </a>
         <a href="https://codepen.io/Robert812218" >
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codepen/codepen-plain.svg" className="footer-icon" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codepen/codepen-plain.svg" className="footer-icon" alt="codepen-icon" />
         </a>
       </footer>
     </div>

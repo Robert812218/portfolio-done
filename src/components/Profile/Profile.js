@@ -1,5 +1,5 @@
 import React from "react";
-import Languages from '../Languages/Languages';
+// import Languages from '../Languages/Languages';
 import './Profile.css';
 
 export default function Profile() {
