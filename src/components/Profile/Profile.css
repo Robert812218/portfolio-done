@@ -2,6 +2,10 @@
     background-image: url("https://image-cdn.essentiallysports.com/wp-content/uploads/Randy-Savage-3.png");
 }
 
+.profile-picture {
+    background-image: url("/src/images/20230103_131255.jpg");
+}
+
 .profile-container {
     display: flex;
     flex-direction: row wrap;
