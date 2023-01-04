@@ -70,10 +70,10 @@ export default function App() {
   return (
     <div>
       <div id="disclaimer-hero">
-        <h1>Disclaimer</h1>
-        <h4>This page is still a work in progress. It still needs breakpoints for screen responsiveness, I haven't started on making it fit mobile screens, and there's generally a lot of rough edges with the CSS to get ironed out, and still some JS functionality to add.</h4>
-        <h4>You can still see what I've got so far, though. Languages, projects, contact section, etc.</h4>
-        <button onClick={renderPage}>GO TO SITE</button>
+        <h1 className="hero-header">Disclaimer</h1>
+        <h4 className="hero-text">This page is still a work in progress. It still needs breakpoints for screen responsiveness, I haven't started on making it fit mobile screens, and there's generally a lot of rough edges with the CSS to get ironed out, and still some JS functionality to add.</h4>
+        <h4 className="hero-text">You can still see what I've got so far, though. Languages, projects, contact section, etc.</h4>
+        <button onClick={renderPage} className="hero-text">GO TO SITE</button>
       </div>
       
       {page && 

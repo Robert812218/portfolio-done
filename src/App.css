@@ -16,19 +16,22 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    text-color: black;
 
 }
 
-#disclaimer-hero h1 {
-    color: rgb(34, 33, 33);
-    
-    
-}
+
 
 #disclaimer-hero h4 {
     padding: 0% 10% 0% 10%;
     text-align: center;
+
+}
+
+.hero-header,
+.hero-text {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.1));
+    color: white;
+ 
 }
 
 #disclaimer-hero button {
