@@ -64,7 +64,7 @@ section:nth-of-type(2n) {
     background-image: url('images/grid_0\ \(1\).png');
     background-position: center;
     background-size: cover;
-    background-repeat: calc();
+    background-repeat: no-repeat;
 }
 
 #contact {
@@ -78,14 +78,14 @@ section:nth-of-type(2n) {
     background-image: url('images/Robert_KellyBOBDONALD_wallpaper_ui_ux_uxui_minimalist_design_ho_03cb2086-afbe-460b-a2da-82df00627a54.png');
     background-position: center;
     background-size: cover;
-    background-repeat: calc();
+    background-repeat: no-repeat;
 }
 
 #langs {
     background-image: url('images/grid_1.png');
     background-position: center;
     background-size: cover;
-    background-repeat: calc();
+    background-repeat: no-repeat;
 }
 
 .content {
