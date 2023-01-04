@@ -1,8 +1,4 @@
 .profile-picture {
-    background-image: url("https://image-cdn.essentiallysports.com/wp-content/uploads/Randy-Savage-3.png");
-}
-
-.profile-picture {
     background-image: url("/src/images/20230103_131255.jpg");
 }
 
@@ -15,6 +11,8 @@
     border: 3px solid white;
     text-align: center;
     color: white;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.1));
+
 }
 
 .scroll-arrows {

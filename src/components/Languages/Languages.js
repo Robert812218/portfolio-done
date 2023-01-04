@@ -97,14 +97,14 @@ export default function Languages() {
                         {mapLangs(row3)}
                     </div>
                 </div>
-                <div className="langs-slider-buttons">
+                {/* <div className="langs-slider-buttons">
                    {data.map((lang) => (
                         <button className="dot">
-                            {/* {lang.id} */}
-                            {/* {lang.item} */}
+                            {lang.id}
+                            {lang.item}
                         </button>
                     ))}
-                </div>
+                </div> */}
                 
             </div>
         </div>

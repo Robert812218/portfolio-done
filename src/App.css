@@ -60,7 +60,33 @@ section:nth-of-type(2n) {
     background-color: rgb(37, 36, 36);
 }
 
+.intro {
+    background-image: url('images/grid_0\ \(1\).png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: calc();
+}
 
+#contact {
+    background-image: url('images/grid_0.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#projects {
+    background-image: url('images/Robert_KellyBOBDONALD_wallpaper_ui_ux_uxui_minimalist_design_ho_03cb2086-afbe-460b-a2da-82df00627a54.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: calc();
+}
+
+#langs {
+    background-image: url('images/grid_1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: calc();
+}
 
 .content {
     display: table-cell;

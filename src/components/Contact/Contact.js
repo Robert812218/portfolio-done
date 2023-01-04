@@ -12,7 +12,9 @@ export default function Contact() {
                 alignItems: "center",
                 justifyContent: "center",
             }}>
-                <h1>Get In Touch</h1>
+                <h1 style={{
+                    backgroundImage: "linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.1))",
+                }}>Get In Touch</h1>
             </div>
             <form action="https://formspree.io/f/mpzeaqjb" method="post" className="contact-form">
                     <input type="text" id="name-input" placeholder="Name" />
