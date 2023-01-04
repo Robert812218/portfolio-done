@@ -60,7 +60,19 @@ section:nth-of-type(2n) {
     background-color: rgb(37, 36, 36);
 }
 
+.intro {
+    background-image: url("images/donut_0.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+#langs {
+    background-image: url("images/donut_1.png");
+    background-position: center;
+    background-size: contain;
+    
+}
 
 .content {
     display: table-cell;
