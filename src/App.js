@@ -41,7 +41,7 @@ function PageContainer() {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" className="footer-icon" alt="github icon" />
         </a>
 
-        <a href="https://linkedin.com/li/-robert-kelly-/" >
+        <a href="https://www.linkedin.com/in/-robert-kelly-/" >
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" className="footer-icon" alt="linkedin icon" />
 
         </a>
